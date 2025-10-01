@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muktha Prajosh | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="st.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Muktha Prajosh</h1>
+    
+      <p id="tagline"></p>
+    
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+    
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Muktha, a final-year CSE student with hands-on experience in Python, Flutter, SQL, and Data Analytics. I enjoy building projects, solving problems, and exploring data visualization tools like Tableau.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <h3>💰 Expense Tracker App</h3>
+        <ul>
+          <li>Graphs for visualizing expenses</li>
+          <li>Time-based filtering (Today, Week, Month)</li>
+          <li>User-settable monthly budget alerts</li>
+          <li>Add, Edit, Delete expenses with database integration</li>
+        </ul>
+      </div>
+      <div class="project">
+        <h3>🎬 Netflix Frontend Clone</h3>
+        <p>Built with HTML, CSS, and JavaScript to replicate the Netflix UI.</p>
+      </div>
+    </div>
+  </section>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const text = "Final Year CSE Student | Aspiring Software & Data Analyst";
+    const tagline = document.getElementById("tagline");
+    let i = 0;
+    function typingEffect() {
+      if (i < text.length) {
+        tagline.textContent += text.charAt(i);
+        i++;
+        setTimeout(typingEffect, 80); // typing speed
+      }
+    }
+    typingEffect();
+  });
+</script>
+
+
+  <!-- Certifications Section (Timeline Style) -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications-container">
+
+      <div class="certification">
+        <div class="certification-icon"><i class="fa-solid fa-code"></i></div>
+        <div class="certification-title">Accenture Software Engineering Job Simulation</div>
+      </div>
+
+      <div class="certification">
+        <div class="certification-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="certification-title">Deloitte Data Analytics Job Simulation</div>
+      </div>
+
+      <div class="certification">
+        <div class="certification-icon"><i class="fa-solid fa-microchip"></i></div>
+        <div class="certification-title">AI Aware Certification – Intel</div>
+      </div>
+
+      <div class="certification">
+        <div class="certification-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="certification-title">TCS iON Career Edge – Young Professional</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mukthaprajosh67@gmail.com">mukthaprajosh67@gmail.com</a></p>
+    <p>Phone: 9497843882</p>
+    <p>
+      <a href="https://www.linkedin.com/in/muktha-prajosh-10280026b/" target="_blank"><i class="fab fa-linkedin"></i></a> | 
+      <a href="https://github.com/muktha67" target="_blank"><i class="fab fa-github"></i></a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Muktha Prajosh | Portfolio Website</p>
+  </footer>
+ 
+
+</body>
+</html>
